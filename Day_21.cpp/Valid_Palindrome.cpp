@@ -16,7 +16,7 @@ public:
             j--;
         }
 
-        if (i <= j && toupper(s[i++]) != toupper(s[j--])) {
+        if (i <= j && tolower(s[i++]) != tolower(s[j--])) {
             return false;
         }
     }
