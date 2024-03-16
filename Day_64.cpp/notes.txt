@@ -1,0 +1,11 @@
+arr[i] = *(arr+i) == i[arr] = *(i+arr)
+
+They both are giving same outputs: - 
+    cout << arr[5] << endl;
+    cout << *(arr+5) << endl;
+
+Only giving first element: -
+    cout << *arr << endl;
+
+It is only adding the value not the index: -
+    cout << *arr + 1 << endl;
