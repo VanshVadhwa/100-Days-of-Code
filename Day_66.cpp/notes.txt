@@ -1,0 +1,41 @@
+1. MACRO: -
+#define PI 3.14
+// We cannot update the value of it in main function
+// It replaces PI with 3.14 in the main function meaning that it is 3.14 that is used in our code and not PI
+// Size of Macro is 8
+// It helps us in not taking any extra space in name of a variable
+
+HOMEWORK - Read this GFG Article(https://www.geeksforgeeks.org/macros-and-its-types-in-c-cpp/) 
+
+2. Four type of MACROS: -
+-> Object-like 
+-> Chain
+-> Multi-line
+-> Function-like
+
+3. GLOBAL VARIBALES: -
+-> Never use it and use reference variable only
+
+4. Inline Function: It can be formed if our code is only one line, only for some exceptional cases, it can get upto 2 or 3 lines and after 3 lines, it never works. It works just as Macros that it replaces its code in the main function. That means, it replaces the function call with its code and does not call the function.
+Benefits: -
+-> No extra memory usage
+-> No function call overhead
+
+5. Deafult Arguments: -
+Here, int start =0 is a defauly argument i.e., if we don't pass the third value in the main function((print(arr,5,2))). Even if we don't put 2 here, it is not going to give error as we already passed it and if we give the value, it's gonna change according to that.
+
+void print(int arr[], int n, int start=0) { 
+    for(int i=start;i<n;i++) {
+        cout << arr[i] << " ";
+    }
+}
+
+//Always start with rightmost meaning we have to pass start = 0 firstly then only we can pass any value to n otherwise we can't do it.
+
+int main()
+{
+    int arr[5] = {1,2,3,4,5};
+    int size=5;
+
+    print(arr, 5);
+}
