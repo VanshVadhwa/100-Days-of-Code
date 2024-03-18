@@ -1,0 +1,25 @@
+1. Reference Variable: Same memory but various names. Example: int i=5, 5 can also be called by a variable j
+
+2. Heap memory: It is used for dynamic memory allocation
+
+Note: Stack Memory = Static Memory allocation
+      Heap Memory: Dynamic Memory allocation
+
+3. int *arr = new int[n];
+//Suppose n = 50, so (new int[n]) is taking 200 bytes in heap memory and (int *arr) is taking 4 bytes .
+and if it is written simply that int arr[50] then it means that it is taking 200 bytes on stack memory only.
+
+4. int *p = new int;
+int *ptr = p;
+
+// Assigning the value 5 to the memory location pointed to by p
+*p = 5; //This is allocated in heap memory
+
+cout << "Value at ptr: " << *ptr << endl;
+cout << "Value at p: " << *p << endl;
+//Above 2 and below 2 are giving same outputs
+cout << "Address at ptr: " << ptr << endl;
+cout << "Address at p: " << p << endl;
+
+Homework: void pointer, address type casting, code studio guided path
+
