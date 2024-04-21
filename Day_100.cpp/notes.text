@@ -1,0 +1,32 @@
+1. Insipte of createing a class Hero inside our main file, we can also craete a file name (Hero.cpp) in the same folder and create a class there. And then to access it, we can use #include "Hero.cpp" in our main file.
+It's size if coming out to be 408. How the hell on this earth! Figure out
+
+Each class properties are private by default, we have to make it public and protected through our convinience
+
+void setHealth(int h, char name) {
+        if(name=="A") {
+        health = h;
+        }
+    }
+
+Here, only the person with name "A" van set the health.
+
+
+Padding: -
+In the provided code, the Hero class consists of two data members: int health; and char level;. The size of an object of the Hero class (berlin in this case) can be calculated as follows:
+
+Size of int health;: Typically, int occupies 4 bytes on most platforms.
+Size of char level;: char typically occupies 1 byte.
+So, the total size of the Hero class object berlin should be 4 bytes (for int health) + 1 byte (for char level) = 5 bytes.
+
+However, due to alignment requirements, the compiler may insert padding bytes to ensure proper alignment of data members. The alignment requirement might vary depending on the compiler and the architecture. Common alignment requirements include aligning data members on addresses that are multiples of their size.
+
+Given the simple structure of the Hero class and assuming no additional padding is inserted by the compiler, the sizeof(berlin) should be 5 bytes. However, if padding is added, it could result in a larger size. To verify the exact size, you can print out the sizeof(berlin) as you did in your code. This will give you the size of the berlin object in bytes according to the compiler being used.
+
+We are getting the output of 8
+
+
+NOTE: "this" keyword is a pointer
+
+HW: https://www.codingninjas.com/studio/guided-paths/basics-of-c/content/118817/offering/1382190
+
